@@ -1,0 +1,16 @@
+GET http://localhost:8763/api/v1/private/articles?page=1&size=1 HTTP/1.1
+Authorization: Bearer {Token}
+###
+POST http://localhost:8763/api/v1/private/articles HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {Token}
+
+{
+    "id":"1",
+    "title": "New Article"
+}
+
+###
+
+DELETE http://localhost:8763/api/v1/private/articles HTTP/1.1
+Authorization: Bearer {Token}
